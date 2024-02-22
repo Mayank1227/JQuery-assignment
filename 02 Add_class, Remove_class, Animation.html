@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .Bold-font {
+            padding: 10px 5px;
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+            background-color: yellow;
+        }
+        .head{
+            text-align: center;
+            margin: 0 auto;
+            background-color: rgb(67, 219, 67);
+            padding: 5px 0;
+        }
+        .box{
+            margin: 20px auto;
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="head">
+            <h1>jQuery Question Two</h1>
+        </div>
+
+        <div class="sub">
+            <h3>Add class, Remove class, Animation.</h3>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam soluta maxime praesentium numquam. Nemo
+                odit sed, est fugit porro, praesentium velit, veniam itaque dolores deserunt non? Id, at enim? In?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laudantium voluptates incidunt, illo
+                architecto voluptate aperiam quaerat cum maiores enim placeat amet odit optio in minus quas voluptatibus
+                doloribus asperiores.</p>
+        </div>
+
+        <div class="box"></div>
+    </div>
+
+
+    <script>
+        
+        $(document).ready(function () {
+
+            // Apply CSS using add class.....
+            $(".sub").addClass("Bold-font");
+
+            // Remove CSS using remove class......
+            $(".head").removeClass("head");
+
+            // jQuery Animation........
+            $(".box").animate({
+                width: "300px",
+                height: "300px",
+            }, 1000);
+        });
+    </script>
+
+</body>
+
+</html>
